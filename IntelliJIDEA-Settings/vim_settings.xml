@@ -1,0 +1,53 @@
+<application>
+  <component name="VimSettings">
+    <state version="4" enabled="true" />
+    <globalmarks />
+    <filemarks>
+      <file name="$USER_HOME$/OneAPM/platform/gateway/src/main/java/com/blueocn/platform/gateway/async/ExceptionHandlingAsyncTaskExecutor.java" timestamp="1468656122202">
+        <mark key="'" line="22" column="11" />
+        <mark key="[" line="67" column="12" />
+        <mark key="]" line="67" column="12" />
+        <mark key="^" line="67" column="12" />
+        <mark key="." line="67" column="12" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="27" column="11" filename="$USER_HOME$/OneAPM/platform/gateway/src/main/java/com/blueocn/platform/gateway/async/ExceptionHandlingAsyncTaskExecutor.java" />
+      <jump line="57" column="11" filename="$USER_HOME$/OneAPM/platform/gateway/src/main/java/com/blueocn/platform/gateway/async/ExceptionHandlingAsyncTaskExecutor.java" />
+      <jump line="62" column="11" filename="$USER_HOME$/OneAPM/platform/gateway/src/main/java/com/blueocn/platform/gateway/async/ExceptionHandlingAsyncTaskExecutor.java" />
+      <jump line="67" column="11" filename="$USER_HOME$/OneAPM/platform/gateway/src/main/java/com/blueocn/platform/gateway/async/ExceptionHandlingAsyncTaskExecutor.java" />
+      <jump line="68" column="16" filename="$USER_HOME$/OneAPM/platform/gateway/src/main/java/com/blueocn/platform/gateway/async/ExceptionHandlingAsyncTaskExecutor.java" />
+      <jump line="71" column="17" filename="$USER_HOME$/OneAPM/platform/gateway/src/main/java/com/blueocn/platform/gateway/async/ExceptionHandlingAsyncTaskExecutor.java" />
+      <jump line="75" column="11" filename="$USER_HOME$/OneAPM/platform/gateway/src/main/java/com/blueocn/platform/gateway/async/ExceptionHandlingAsyncTaskExecutor.java" />
+      <jump line="22" column="11" filename="$USER_HOME$/OneAPM/platform/gateway/src/main/java/com/blueocn/platform/gateway/async/ExceptionHandlingAsyncTaskExecutor.java" />
+    </jumps>
+    <registers>
+      <register name=":" type="4">
+        <text>wq</text>
+      </register>
+      <register name="/" type="4">
+        <text>de</text>
+      </register>
+    </registers>
+    <search>
+      <last-search>de</last-search>
+      <last-offset />
+      <last-pattern>de</last-pattern>
+      <last-dir>1</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history>
+      <history-search>
+        <entry>ls</entry>
+        <entry>de</entry>
+      </history-search>
+      <history-cmd>
+        <entry>wq</entry>
+      </history-cmd>
+    </history>
+    <shortcut-conflicts />
+    <editor>
+      <key-repeat enabled="true" />
+    </editor>
+  </component>
+</application>

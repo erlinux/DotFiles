@@ -1,0 +1,11 @@
+<templateSet group="Java">
+  <template name="map" value="$MAP$&lt;$TYPE1$, $TYPE2$&gt; $VAR$" description="Generate Map&lt;Obj1, Obj2&gt;" toReformat="true" toShortenFQNames="true">
+    <variable name="MAP" expression="variableOfType(Type)" defaultValue="&quot;java.util.Map&quot;" alwaysStopAt="true" />
+    <variable name="TYPE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
