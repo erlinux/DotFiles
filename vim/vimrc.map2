@@ -1,0 +1,71 @@
+set laststatus=2
+"开启状态横幅
+set t_Co=256
+"设置256色位(maybe)
+
+set showmode
+"命令行显示vim当前模式
+
+set showcmd
+"命令行显示输入的命令
+set colorcolumn=84
+"显示红竖
+set smartindent
+"智能对齐方式
+set tabstop=5
+"tab键个数
+set background=dark
+"背景颜色
+
+syntax on
+"语法高亮度显示
+filetype on                    
+"检测文件的类型  
+
+set fileencodings=uft-8,gbk  "使用utf-8或gbk打开文件
+set cursorline               "为光标所在行加下划线
+set clipboard+=unnamed       "共享剪贴板  
+set magic                    "设置魔术
+set noeb                     "去掉输入错误的提示声音
+filetype plugin on           "允许插件
+set completeopt=preview,menu "代码补全 
+
+"set paste
+"set clipboard=unnamedplus
+set incsearch
+set ignorecase
+set nocompatible
+set wildmenu
+set background=dark
+"colorscheme solarized
+set gcr=a:block-blinkon0
+set laststatus=2
+set ruler
+set number
+set cursorline
+set cursorcolumn
+set hlsearch
+"set guifont=YaHei\ Consolas\ Hybrid\ 10.5
+set nowrap
+set expandtab
+" 设置编辑时制表符占用空格数
+set tabstop=4
+" 设置格式化时制表符占用空格数
+set shiftwidth=4
+" 让 vim 把连续数量的空格视为一个制表符
+set softtabstop=4
+set foldmethod=syntax
+" 启动 vim 时关闭折叠代码
+set nofoldenable
+set completeopt-=preview
+set sessionoptions="blank,globals,localoptions,tabpages,sesdir,folds,help,options,resize,winpos,winsize"
+set undodir=~/.undo_history/
+set undofile
+
+"键盘映射
+map   <C-A> ^
+map   <C-E> $
+map   <C-Z> u
+map   <C-U> dd
+map   <C-S> <Esc>:w<CR>
+map   <C-W> <Esc>:q<CR>
