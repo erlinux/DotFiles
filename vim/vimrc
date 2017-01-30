@@ -20,15 +20,12 @@ vnoremap <Leader>y "+y
 nmap <Leader>p "+p
 " 设置快捷键将系统剪贴板内容粘贴至 vim
 
-set cuc 
-"生成竖线
-"set background=dark
-"背景颜色
-"colorscheme darkblue
-"深蓝色配色方案
-set ruler
-"使用标尺
-set cursorline "突出显示当前行 set ruler "显示状态栏标尺
+set cursorcolumn     "set cuc
+set cursorline       "set cul
+highlight CursorLine   cterm=NONE ctermbg=black ctermfg=yellow guibg=NONE guifg=NONE
+highlight CursorColumn cterm=NONE ctermbg=gray  ctermfg=green  guibg=NONE guifg=NONE
+set cursorline "突出显示当前行
+set ruler "显示状态栏标尺
 set showmode
  
 syntax on
@@ -57,7 +54,6 @@ map   <C-H> <Esc>:noh<CR>
 "ctrl+H 撤销查找状态
 
 "-------------------------------------------------------------------"
-"set cursorline             "为光标所在行加下划线
 "set noeb                   "去掉输入错误的提示声音
 "set cmdheight=2		   	"设置命令行高度
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}   "状态行显示的内容  
