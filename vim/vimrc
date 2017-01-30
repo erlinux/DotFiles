@@ -12,15 +12,25 @@ set smartindent
 "智能对齐
 set tabstop=4
 "tab个数
-set background=dark
-"背景颜色
-set ruler
-"使用标尺
-set showmode
 "显示模式
 set paste 
 "粘贴模式
+vnoremap <Leader>y "+y
+" 设置快捷键将选中文本块复制至系统剪贴板
+nmap <Leader>p "+p
+" 设置快捷键将系统剪贴板内容粘贴至 vim
 
+set cuc 
+"生成竖线
+"set background=dark
+"背景颜色
+"colorscheme darkblue
+"深蓝色配色方案
+set ruler
+"使用标尺
+set cursorline "突出显示当前行 set ruler "显示状态栏标尺
+set showmode
+ 
 syntax on
 "语法高亮
 filetype on                    
@@ -28,7 +38,6 @@ filetype on
 filetype plugin on
 "允许插件
 
-colorscheme darkblue        "深蓝色配色方案
 set autoread		        "自动重新加载外部修改内容 
 set nobackup
 set noswapfile
@@ -40,10 +49,10 @@ map   <C-A> ^
 "ctrl+A 移动行首
 map   <C-E> $
 "ctrl+E 移动行末
+map   <C-G> G
+"ctrl+G 移动段末
 map   <C-Z> u
 "ctrl+Z 撤销输入
-map   <C-U> dd
-"ctrl+U 删除当行
 map   <C-H> <Esc>:noh<CR>
 "ctrl+H 撤销查找状态
 
@@ -52,3 +61,6 @@ map   <C-H> <Esc>:noh<CR>
 "set noeb                   "去掉输入错误的提示声音
 "set cmdheight=2		   	"设置命令行高度
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}   "状态行显示的内容  
+"set textwidth=84                      
+"设定文本的宽度为122个字符时自动断行 "set columns=75"设置文本达到columns宽度时自动换行 set wrap "设置文本达到textwidth宽度时自动换行，但实际文件还是一行
+"set undofile                           "持久撤销功能
