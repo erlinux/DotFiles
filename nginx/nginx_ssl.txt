@@ -1,0 +1,14 @@
+git clone https://github.com/letsencrypt/letsencrypt
+cd letsencrypt
+./letsencrypt-auto certonly --standalone --email jiwenkangatech@foxmail.com -d itxdm.com -d www.itxdm.com
+cd /etc/letsencrypt/live/
+
+#cert.pem  - Apache服务器端证书
+#chain.pem  - Apache根证书和中继证书
+#fullchain.pem  - Nginx所需要ssl_certificate文件
+#privkey.pem - 安全证书KEY文件
+
+cd /etc/nginx/conf.d/ && vim ssl.conf
+
+ssl_certificate /etc/letsencrypt/live/itxdm.com/fullchain.pem;
+ssl_certificate_key /etc/letsencrypt/live/itxdm.com/privkey.pem;
