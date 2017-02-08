@@ -22,8 +22,8 @@ nmap <Leader>p "+p
 
 set cursorcolumn     "set cuc
 set cursorline       "set cul
-highlight CursorLine   cterm=NONE ctermbg=black ctermfg=yellow guibg=NONE guifg=NONE
-highlight CursorColumn cterm=NONE ctermbg=gray  ctermfg=green  guibg=NONE guifg=NONE
+highlight CursorLine   cterm=NONE ctermbg=black ctermfg=green guibg=NONE guifg=NONE
+highlight CursorColumn cterm=NONE ctermbg=gray  ctermfg=yellow  guibg=NONE guifg=NONE
 set cursorline "突出显示当前行
 set ruler "显示状态栏标尺
 set showmode
@@ -60,3 +60,7 @@ map   <C-H> <Esc>:noh<CR>
 "set textwidth=84                      
 "设定文本的宽度为122个字符时自动断行 "set columns=75"设置文本达到columns宽度时自动换行 set wrap "设置文本达到textwidth宽度时自动换行，但实际文件还是一行
 "set undofile                           "持久撤销功能
+set encoding=utf-8
+set langmenu=zh_CN.UTF-8
+language message zh_CN.UTF-8
+"解决乱码情况
