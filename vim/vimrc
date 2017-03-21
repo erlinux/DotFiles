@@ -42,10 +42,10 @@ set nocompatible            "去掉有关vi一致性
 set expandtab               " 使用空格代替制表符
 
 "键盘映射
-map   <C-A> ^
-"ctrl+A 移动行首
-map   <C-E> $
-"ctrl+E 移动行末
+"map   <C-A> ^
+""ctrl+A 移动行首
+"map   <C-E> $
+""ctrl+E 移动行末
 map   <C-G> G
 "ctrl+G 移动段末
 map   <C-Z> u
