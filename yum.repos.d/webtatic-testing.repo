@@ -1,0 +1,26 @@
+[webtatic-testing]
+name=Webtatic Repository EL6 - $basearch - Testing
+#baseurl=https://repo.webtatic.com/yum/el6-testing/$basearch/
+mirrorlist=https://mirror.webtatic.com/yum/el6-testing/$basearch/mirrorlist
+failovermethod=priority
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-webtatic-el6
+
+[webtatic-testing-debuginfo]
+name=Webtatic Repository EL6 - $basearch - Testing Debug
+#baseurl=https://repo.webtatic.com/yum/el6-testing/$basearch/debug/
+mirrorlist=https://mirror.webtatic.com/yum/el6-testing/$basearch/debug/mirrorlist
+failovermethod=priority
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-webtatic-el6
+
+[webtatic-testing-source]
+name=Webtatic Repository EL6 - $basearch - Testing Source
+#baseurl=https://repo.webtatic.com/yum/el6-testing/SRPMS/
+mirrorlist=https://mirror.webtatic.com/yum/el6-testing/SRPMS/mirrorlist
+failovermethod=priority
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-webtatic-el6

@@ -1,0 +1,5 @@
+[ffmpeg]
+name=linuxro
+baseurl=http://li.nux.ro/download/nux/dextop/el6/x86_64/
+enable=1
+gpgcheck=0

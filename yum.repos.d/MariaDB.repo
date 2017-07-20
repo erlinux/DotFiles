@@ -1,0 +1,4 @@
+[mariadb]
+name = MariaDB
+baseurl = https://mirrors.tuna.tsinghua.edu.cn/mariadb/mariadb-10.2.6/yum/centos6-x86/
+gpgcheck=0
