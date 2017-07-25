@@ -1,7 +1,7 @@
 git clone https://github.com/letsencrypt/letsencrypt
 cd letsencrypt
-/etc/init.d/nginx|http stop
-./letsencrypt-auto certonly --standalone --email jiwenkangatech@foxmail.com -d itxdm.com -d www.itxdm.com -d irabe.me -d www.irabe.me
+sudo /etc/init.d/(nginx|httpd) stop
+./letsencrypt-auto certonly --standalone --email jiwenkangatech@foxmail.com -d itxdm.com
 cd /etc/letsencrypt/live/
 
 #cert.pem  - Apache服务器端证书
