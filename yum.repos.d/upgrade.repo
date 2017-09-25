@@ -1,0 +1,5 @@
+[upgrade]
+name=upgrade
+baseurl=http://dev.centos.org/centos/6/upg/x86_64/
+enable=1
+gpgcheck=0
