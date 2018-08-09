@@ -1,0 +1,8 @@
+nmap  -v -PS 172.17.0.0/24 -T5 -Pn -n -e docker0 -p 80 --open
+# np not port
+# PS PING SYN
+# T5 TimeSec
+# Pn Ping not
+# n  DNS not
+# e  interface
+# p  port

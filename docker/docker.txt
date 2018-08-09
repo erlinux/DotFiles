@@ -1,0 +1,30 @@
+## INSTALL ##
+wget -qO- https://get.docker.com/ | sh
+docker version
+yum -y install docker-io ; systemctl enable docker --now
+
+## REGISTRY ##
+1. Public 			docker search KEYWORD
+2. Private  		docker save REPO:TAG > /PATH/TO/TAR
+3. Local 			docker load -i <imagesname.tar>
+
+## RUN ##
+brctl show | df -h
+docker run [--privileged] -it docker.io/imagine10255/centos6-lnmp-php56 /bin/bash
+	-p					用于映射本机和 docker 的端口
+	--net=host			将 docker 网络与本机进行绑定
+	-d -it /bin/bash	可 attach 快速执行 COMMAND
+	-v 					/path/to/host/directory:/path/to/vm/directory
+
+## PROCESS ##
+docker pull 
+docker images 
+	docker tag  SOURCE_IMAGE:TAG TARGET_IMAGE:TAG
+	docker rmi SOURCE_IMAGE
+docker ps [-aq]
+	docker start/kill
+	docker exec -it CONTAINERID /bin/bash
+	docker commit ee6e58f2f3f7 centos6:screenshot
+	docker rm $(docker ps -aq) 
+		docker rm $(docker ps -aq) [-f]
+	docker inspect $(docker ps -aq) 
